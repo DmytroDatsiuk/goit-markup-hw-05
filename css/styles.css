@@ -46,11 +46,13 @@ ul {
 }
 
 /* Header */
-
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .head {
   display: flex;
-  align-items: baseline;
-  border-bottom: 1px solid #ececec;
+  align-items: center;
+  
 }
 .logo {
   color: var(--brand-color);
@@ -67,6 +69,8 @@ ul {
 .nav {
   display: flex;
   align-items: center;
+  
+  
 }
 .nav-list {
   display: flex;
@@ -405,11 +409,8 @@ ul {
 .address-logo-studio {
   color: var(--primary-white-color);
 }
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
-}
-.footer-item:last-child {
-  margin-bottom: 0;
 }
 .footer-contact {
   color: var(--primary-white-color);
