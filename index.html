@@ -116,31 +116,52 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="gallery list">
             <li class="gallery-item">
-              <img
-                src="./img/Gallery/бокс1.jpg"
-                alt="Мужчина пише код за робочим столом на підключеному моніторі та планшеті"
-                width="370"
-                height="294"
-                class="img"
-              />
+              <div class="gallery-thumb">
+                <img
+                  src="./img/Gallery/бокс1.jpg"
+                  alt="Мужчина пише код за робочим столом на підключеному моніторі та планшеті"
+                  width="370"
+                  height="294"
+                  class="img"
+                />
+                <div class="gallery-actions">
+                  <div class="box-text">
+                    <p class="gallery-text">Десктопні додатки</p>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="gallery-item">
-              <img
-                src="./img/Gallery/бокс2.jpg"
-                alt="дівчина синхронізує планшет з ноутбуком"
-                width="370"
-                height="294"
-                class="img"
-              />
+              <div class="gallery-thumb">
+                <img
+                  src="./img/Gallery/бокс2.jpg"
+                  alt="дівчина синхронізує планшет з ноутбуком"
+                  width="370"
+                  height="294"
+                  class="img"
+                />
+                <div class="gallery-actions">
+                  <div class="box-text">
+                    <p class="gallery-text">Мобільні додатки</p>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="gallery-item">
-              <img
-                src="./img/Gallery/бокс3.jpg"
-                alt="Дівчина обирає колір на планшеті"
-                width="370"
-                height="294"
-                class="img"
-              />
+              <div class="gallery-thumb">
+                <img
+                  src="./img/Gallery/бокс3.jpg"
+                  alt="Дівчина обирає колір на планшеті"
+                  width="370"
+                  height="294"
+                  class="img"
+                />
+                <div class="gallery-actions">
+                  <div class="box-text">
+                    <p class="gallery-text">Дизайнерські рішення</p>
+                  </div>
+                </div>
+            </div>
             </li>
           </ul>
         </div>
@@ -414,5 +435,12 @@
       </div>
       </div>
     </footer>
+    <button data-modal-open>відкрити модалку</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close>Закрити</button>
+            </div>
+        </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
