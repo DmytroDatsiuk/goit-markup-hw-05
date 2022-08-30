@@ -683,11 +683,21 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 528px;
   height: 581px;
   
   background-color: #fff;
-  
-  
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-batton {
+  margin-top: 8px;
+  margin-right: 8px;
+  background-color: var(--white-background);
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
