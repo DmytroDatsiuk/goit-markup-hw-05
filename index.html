@@ -55,7 +55,17 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br /> ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                  <button data-modal-close class="modal-batton">
+                    <svg class="modal-icon" width="11" height="11" aria-label="close">
+                      <use class="modal-ic" href="./img/SVG/symbol-defs.svg#icon-xvecto"></use>
+                    </svg>
+                  </button>
+              </div>
+          </div>
+          <script src="./js/modal.js"></script>
         </div>
       </section>
       <!-- Features -->
@@ -124,11 +134,7 @@
                   height="294"
                   class="img"
                 />
-                <div class="gallery-actions">
-                  <div class="box-text">
-                    <p class="gallery-text">Десктопні додатки</p>
-                  </div>
-                </div>
+                <p class="gallery-text">Десктопні додатки</p>
               </div>
             </li>
             <li class="gallery-item">
@@ -435,16 +441,5 @@
       </div>
       </div>
     </footer>
-    <button data-modal-open>відкрити модалку</button>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button data-modal-close class="modal-batton">
-                  <svg class="modal-icon" width="11" height="11" aria-label="close">
-                    <use class="modal-ic" href="./img/SVG/symbol-defs.svg#icon-xvecto"></use>
-                  </svg>
-                </button>
-            </div>
-        </div>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
